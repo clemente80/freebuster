@@ -1,0 +1,165 @@
+{
+  "films": [
+    {
+      "film_name": "Cobra Kai",
+      "url": "https://www.youtube.com/watch?v=B9U8OgTGDSk",
+      "poster_img": "https://i.ibb.co/kKsM6Zk/poster1.jpg",
+      "logo_img": "https://i.ibb.co/YhY7DH5/cobra-kai-logo.png",
+      "type": "tv séries",
+      "parental_rating": 12,
+      "category": [
+        "instigante",
+        "empolgantes",
+        "ação"
+      ],
+      "year": 2018,
+      "duration": 30,
+      "session": 3,
+      "episodes": 32,
+      "like": false,
+      "deslike": false,
+      "description": "Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny Lawrence find themselves martial-arts rivals again.",
+      "top10": true,
+      "spotlight": false,
+      "id": 0
+    },
+    {
+      "film_name": "Biohackers",
+      "url": "https://www.youtube.com/watch?v=atHBOUvgBI8",
+      "poster_img": "https://i.ibb.co/qnvV5Py/poster2.jpg",
+      "logo_img": "https://i.ibb.co/KxQKLL5/biohackers-logo.png",
+      "type": "tv séries",
+      "parental_rating": 16,
+      "category": [
+        "complexos",
+        "sci-fi",
+        "suspense"
+      ],
+      "year": 2020,
+      "duration": 45,
+      "session": 1,
+      "episodes": 7,
+      "like": false,
+      "deslike": false,
+      "description": "A fast-paced thriller following medical student Mia Akerlund who discovers the use of highly advanced biohacking technology in her university town.",
+      "top10": true,
+      "spotlight": true,
+      "id": 1
+    },
+    {
+      "film_name": "Black Mirror",
+      "url": "https://www.youtube.com/watch?v=i9Wc82gCZLE",
+      "poster_img": "https://i.ibb.co/NN5BVcR/poster3.jpg",
+      "logo_img": "https://i.ibb.co/nzZ9Yg6/black-mirror-logo.png",
+      "type": "tv séries",
+      "parental_rating": 16,
+      "category": [
+        "drama",
+        "realidade alternativa",
+        "distopia"
+      ],
+      "year": 2011,
+      "duration": 60,
+      "session": 5,
+      "episodes": 22,
+      "like": false,
+      "deslike": false,
+      "description": "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
+      "top10": false,
+      "spotlight": false,
+      "id": 2
+    },
+    {
+      "film_name": "Lucifer",
+      "url": "https://www.youtube.com/watch?v=NcnK3C5W7SI",
+      "poster_img": "https://i.ibb.co/RBcpbpJ/poster4.jpg",
+      "logo_img": "https://i.ibb.co/gjx2VXf/lucifer-logo.png",
+      "type": "tv séries",
+      "parental_rating": 16,
+      "category": [
+        "drama",
+        "crime",
+        "fantasia"
+      ],
+      "year": 2016,
+      "duration": 42,
+      "session": 5,
+      "episodes": 93,
+      "like": false,
+      "deslike": false,
+      "description": "Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity. He settles in Los Angeles - the City of Angels.",
+      "top10": false,
+      "spotlight": false,
+      "id": 3
+    },
+    {
+      "film_name": "3%",
+      "url": "https://www.youtube.com/watch?v=8yyzNQfaQR8",
+      "poster_img": "https://i.ibb.co/YZy0kt2/poster5.jpg",
+      "logo_img": "https://i.ibb.co/D50pKYq/3-logo.png",
+      "type": "tv séries",
+      "parental_rating": 16,
+      "category": [
+        "instigante",
+        "distopia",
+        "drama"
+      ],
+      "year": 2016,
+      "duration": 50,
+      "session": 4,
+      "episodes": 33,
+      "like": false,
+      "deslike": false,
+      "description": "A post-apocalyptic thriller set in near-future Brazil, where a select few are allowed to join a privileged society after undergoing an intense and competitive process.",
+      "top10": false,
+      "spotlight": true,
+      "id": 4
+    },
+    {
+      "film_name": "You",
+      "url": "https://www.youtube.com/watch?v=urnOhIiiuYI",
+      "poster_img": "https://i.ibb.co/JmJxCX0/poster6.jpg",
+      "logo_img": "https://i.ibb.co/6g5gSzt/you-logo.png",
+      "type": "tv séries",
+      "parental_rating": 16,
+      "category": [
+        "crime",
+        "romance",
+        "drama"
+      ],
+      "year": 2018,
+      "duration": 50,
+      "session": 2,
+      "episodes": 30,
+      "like": false,
+      "deslike": false,
+      "description": "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+      "top10": false,
+      "spotlight": true,
+      "id": 5
+    },
+    {
+      "film_name": "Lupin",
+      "url": "https://www.youtube.com/watch?v=FoiQ-Xr8NDI",
+      "poster_img": "https://i.ibb.co/2jRZf4Z/poster7.jpg",
+      "logo_img": "https://i.ibb.co/rMZ40LC/lupin-logo.png",
+      "type": "tv séries",
+      "parental_rating": 16,
+      "category": [
+        "crime",
+        "ação",
+        "drama"
+      ],
+      "year": 2021,
+      "duration": 60,
+      "session": 1,
+      "episodes": 7,
+      "like": false,
+      "deslike": false,
+      "description": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      "top10": false,
+      "spotlight": true,
+      "id": 6
+    }
+  ]
+}
