@@ -32,6 +32,7 @@ interface ImovieData{
 const MainComponent: React.FC = () => {
 
     const [dataMovie, setDataMovie] = useState<ImovieData[]>([])
+    const [dataColor, setDataColor] = useState([String])
     
     const HandleOpenDesciption = useCallback(() => {
         const ThumB = document.querySelector('.sectionPlayer')
@@ -52,14 +53,14 @@ const MainComponent: React.FC = () => {
     //TRES MANEIRAS DIFERENTES DE FAZER UMA CHAMADA DE FUNÇÃO O USECALLBACK É UMA FUNÇÃO DO REACT JA TE ENSINEI VARIAS VEZES NAO VOU FALAR DE NOVO, PROCURA NA INTERNET 
     // SE VC QUISER SABER DE VERDADE O QUE ELA FAZ, CRIANDO UMA CONSTANTE POR ARROW FUNCTION NA ULTIMA, E A PRIMEIRA CONVENCIONAL ATRAVES DE UMA FUNÇÃO SINCRONA
     //posso fazer assim tambem, ae vc tem que pesquisar o que é async e pra que serve tambem é importante, não vou conseguir te explicar tão bem quanto se vc pesquisar
-     function firstPos (pos:any){
+     function firstPos(pos:any){
         if (pos === 0)
         return pos= 0.0001
         else 
         return pos
     }
 
-    async function teste1 (pos:any){
+    async function secondPos(pos:any){
         if (pos === 0)
         return pos= 0.0001
         else 
@@ -101,14 +102,14 @@ const MainComponent: React.FC = () => {
             </div>
              
             <div className='arrowThumbnail previous'><IoIosArrowBack /></div>
-
+            
+            {/* <section className='scrollHorizontal'> */}
             {dataMovie.map(myMovie => (
-                
                 <Thumbnail key={myMovie.id} className='thumbnail' space={firstPos(myMovie.id)}>
-                    <div className='sectionSign'>
+                    <div className='sectionSign' style={{display: myMovie.spotlight? 'block':'none'}}>
                         <span>F</span><span>B</span>
                     </div>
-                    <div className='sectionTop10'>
+                    <div className='sectionTop10' style={{display: myMovie.top10? 'block':'none'}}>
                         <span>TOP</span><br/><span>10</span>
                     </div>
                     <div className='playTrailer'>
@@ -129,11 +130,20 @@ const MainComponent: React.FC = () => {
                             <IoMdAddCircleOutline />
                             <BiLike />
                             <BiDislike />
-                            <a onClick={() => {HandleOpenDesciption()}}><AiOutlineDownCircle /></a>
+                            <a onClick={() => HandleOpenDesciption()}><AiOutlineDownCircle /></a>
                         </div>
                         <div className='types'>
                             <span>{myMovie.session} temporadas</span>
-                            <span>{myMovie.parental_rating}</span>
+
+                            {(() => {switch (myMovie.parental_rating) {
+                                case 10: return <span style={{background: `#0f7dc2`, color: 'white'}}>{myMovie.parental_rating}</span>
+                                case 12: return <span style={{background: `#f8c411`}}>{myMovie.parental_rating}</span>
+                                case 14: return <span style={{background: `#e67824`}}>{myMovie.parental_rating}</span>
+                                case 16: return <span style={{background: `#db2827`, color: 'white'}}>{myMovie.parental_rating}</span>
+                                case 18: return <span style={{background: `#1d1815`, color: 'white'}}>{myMovie.parental_rating}</span>
+                                }
+                            })()}
+
                             <span>{myMovie.year}</span>
                         </div>
                         <div className='category'>
@@ -143,9 +153,10 @@ const MainComponent: React.FC = () => {
                         </div>               
                     </div>
                 </Thumbnail>
-
             ))}
-
+            {/* </section> */}
+            
+            
             <div  className='arrowThumbnail next'><IoIosArrowForward /></div>
         </Container>
     )

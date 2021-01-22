@@ -23,7 +23,7 @@ export const Container = styled.div`
     overflow: hidden;
     top: 0;
     left: 0;
-    box-shadow: inset 0 -100px 20px rgba(0, 0, 0, 1);
+    box-shadow: inset 0 -100px 20px rgba(256, 0, 0, 1);
 
     .player {
       box-shadow: inset 0 -100px 20px rgba(256, 0, 0, 1);
@@ -56,10 +56,17 @@ export const Container = styled.div`
       }
     }
   }
+
+  .scrollHorizontal {
+    position: relative;
+    width: 100%;
+    background: red;
+  }
 `
 
 export const Thumbnail = styled.section<IThumbnailProps>`
   position: absolute;
+  top: 500px;
   width: 266px;
   height: 154px;
   margin: 0;
@@ -68,7 +75,6 @@ export const Thumbnail = styled.section<IThumbnailProps>`
   border-radius: 0px;
   transform-style: preserve-3d;
   transition: .2s ease-in-out;
-  top: 500px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
   ${props => props.space && css`
       left: calc((270px * ${props.space}) + 40px);
@@ -189,7 +195,7 @@ export const Thumbnail = styled.section<IThumbnailProps>`
     background-color: rgba(0,0,0,.25);
     backdrop-filter: blur(7.5px);
     transition: .4s ease-in-out;
-    border-top: 1px solid rgba(256, 256, 256, .5);
+    border-top: 1px solid rgba(256, 256, 256, .25);
     box-shadow: 0 -5px 10px rgba(0, 0, 0, .5);
 
     div {
@@ -213,7 +219,7 @@ export const Thumbnail = styled.section<IThumbnailProps>`
       pointer-events: none;
       position: absolute;
       bottom: 100px;
-      left: 0;
+      margin-left: 22px;
       opacity: 0;
       transition: .4s ease-in-out;
       transition-delay: 0s;
@@ -225,10 +231,10 @@ export const Thumbnail = styled.section<IThumbnailProps>`
 
     .clicks {
       display: flex;
+      position: relative;
+      width: 100%;
       flex-direction: row;
-      flex-basis: 100%;
       justify-content: space-between;
-      padding-bottom: 0px;
 
       a {
         transition: .4s ease-in-out;
@@ -239,8 +245,8 @@ export const Thumbnail = styled.section<IThumbnailProps>`
       }
 
       svg {
+        padding: 4px 22px;
         vertical-align: middle;
-        padding: 10px 20px;
         cursor: pointer;
         vertical-align: middle;
         font-size: 25px;
@@ -254,6 +260,7 @@ export const Thumbnail = styled.section<IThumbnailProps>`
     }
 
     .types {
+      margin-top: 5px;
 
       span {
         font-size: 12px;

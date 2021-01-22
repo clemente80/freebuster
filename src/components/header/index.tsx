@@ -1,10 +1,10 @@
 import React from 'react'
 import {Content} from './styles'
 import logo from './../../assets/photo.jpg'
-import {FaSearch} from 'react-icons/fa'
+import {FaChild} from 'react-icons/fa'
 import {AiOutlineGift} from 'react-icons/ai'
 import {BiBell} from 'react-icons/bi'
-import {MdChildCare} from 'react-icons/md'
+import {BsSearch} from 'react-icons/bs'
 
 const HeaderComponent: React.FC = () => {
     return(
@@ -22,8 +22,8 @@ const HeaderComponent: React.FC = () => {
                 <p>Minha lista</p>
             </div>
             <div>
-                <p><FaSearch /></p>
-                <p><MdChildCare /></p>
+                <p><BsSearch /></p>
+                <p><FaChild /></p>
                 <p><AiOutlineGift /></p>
                 <p><BiBell /></p>
                 <p style={{backgroundImage: `url(${logo})`}}></p>

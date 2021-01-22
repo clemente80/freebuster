@@ -75,7 +75,7 @@
       "poster_img": "https://i.ibb.co/RBcpbpJ/poster4.jpg",
       "logo_img": "https://i.ibb.co/gjx2VXf/lucifer-logo.png",
       "type": "tv séries",
-      "parental_rating": 16,
+      "parental_rating": 18,
       "category": [
         "drama",
         "crime",
@@ -88,7 +88,7 @@
       "like": false,
       "deslike": false,
       "description": "Lucifer Morningstar has decided he's had enough of being the dutiful servant in Hell and decides to spend some time on Earth to better understand humanity. He settles in Los Angeles - the City of Angels.",
-      "top10": false,
+      "top10": true,
       "spotlight": false,
       "id": 3
     },
@@ -157,7 +157,7 @@
       "like": false,
       "deslike": false,
       "description": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
-      "top10": false,
+      "top10": true,
       "spotlight": true,
       "id": 6
     }
