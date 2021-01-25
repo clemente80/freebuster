@@ -8,7 +8,7 @@ import {BiLike} from 'react-icons/bi'
 import {BiDislike} from 'react-icons/bi'
 import ReactPlayer from 'react-player'
 import api from './../../services/api'
-import ModalMovie from './../../components/ModalMovie'
+import ModalMovie from '../modalMovie'
 
 interface ImovieData{
     film_name: string,
@@ -35,10 +35,13 @@ const MainComponent: React.FC = () => {
     const [dataMovie, setDataMovie] = useState<ImovieData[]>([])
     const [dataColor, setDataColor] = useState([String])
     
-    const HandleOpenDesciption = useCallback(() => {
-        const ThumB = document.querySelector('.sectionPlayer')
-        ThumB?.classList.toggle('sectionDescription')
-        console.log(ThumB)
+    const HandleOpenDesciption = useCallback((a) => {
+        // const ThumB = document.querySelector('.sectionPlayer')
+        // ThumB?.classList.toggle('sectionDescription')
+
+        const posY = document.getElementById('thumbnail' + a)?.clientTop
+        const posX = document.getElementById('thumbnail' + a)?.clientLeft
+        console.log(a, posY, posX)
     }, [])
 
     useEffect(() => {
@@ -84,7 +87,7 @@ const MainComponent: React.FC = () => {
 
     return(
         <Container>
-            {/* <div className='background' style={{backgroundImage: `url(${backgroundPoster})`}}></div> */}
+            <div className='background' style={{backgroundImage: `url(${backgroundPoster})`}}></div>
             
             <div className='background'>
                 <ReactPlayer
@@ -106,7 +109,7 @@ const MainComponent: React.FC = () => {
             
             {/* <section className='scrollHorizontal'> */}
             {dataMovie.map(myMovie => (
-                <Thumbnail key={myMovie.id} className='thumbnail' space={firstPos(myMovie.id)}>
+                <Thumbnail key={myMovie.id} id={'thumbnail' + `${myMovie.id}`} space={firstPos(myMovie.id)}>
                     <div className='sectionSign' style={{display: myMovie.spotlight? 'block':'none'}}>
                         <span>F</span><span>B</span>
                     </div>
@@ -131,7 +134,7 @@ const MainComponent: React.FC = () => {
                             <IoMdAddCircleOutline />
                             <BiLike />
                             <BiDislike />
-                            <a onClick={() => HandleOpenDesciption()}><AiOutlineDownCircle /></a>
+                            <a onClick={() => HandleOpenDesciption(myMovie.id)}><AiOutlineDownCircle /></a>
                         </div>
                         <div className='types'>
                             <span>{myMovie.session} temporadas</span>
