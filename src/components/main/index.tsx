@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import {Container, Thumbnail} from './styles'
 import backgroundPoster from './../../assets/background_poster.jpg'
-import {AiOutlineDownCircle} from 'react-icons/ai'
+import {AiOutlineBorderTop, AiOutlineDownCircle} from 'react-icons/ai'
 import {IoMdAddCircleOutline, IoIosArrowBack, IoIosArrowForward} from 'react-icons/io'
 import {RiPlayCircleLine} from 'react-icons/ri'
 import {BiLike} from 'react-icons/bi'
@@ -39,9 +39,9 @@ const MainComponent: React.FC = () => {
         // const ThumB = document.querySelector('.sectionPlayer')
         // ThumB?.classList.toggle('sectionDescription')
 
-        const posY = document.getElementById('thumbnail' + a)?.clientTop
-        const posX = document.getElementById('thumbnail' + a)?.clientLeft
-        console.log(a, posY, posX)
+        const posTop = document.getElementById('thumbnail' + a)?.offsetTop
+        const posLeft = document.getElementById('thumbnail' + a)?.offsetLeft
+        console.log(' top ' + posTop, ' left '+ posLeft)
     }, [])
 
     useEffect(() => {
