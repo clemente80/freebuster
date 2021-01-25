@@ -19,14 +19,20 @@ export const Container = styled.div`
   .background {
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
     top: 0;
     left: 0;
-    box-shadow: inset 0 -100px 20px rgba(256, 0, 0, 1);
 
-    .player {
-      box-shadow: inset 0 -100px 20px rgba(256, 0, 0, 1);
+    :after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 140px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to top, #0d070d, transparent);
+      z-index: 2px;
     }
   }
 
@@ -71,7 +77,6 @@ export const Thumbnail = styled.section<IThumbnailProps>`
   height: 154px;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   border-radius: 0px;
   transform-style: preserve-3d;
   transition: .2s ease-in-out;
@@ -109,7 +114,7 @@ export const Thumbnail = styled.section<IThumbnailProps>`
     .sectionPlayer {
       transition-delay: 0.5s;
       opacity: 1;
-      bottom: 0px;
+      bottom: -135px;
 
       .sectionNameMovie {
         opacity: 1;
@@ -181,6 +186,7 @@ export const Thumbnail = styled.section<IThumbnailProps>`
   }
 
   .playTrailer {
+    overflow: hidden;
     opacity: 0;
     z-index: 9;
     transition: .4s ease-in-out;
@@ -189,13 +195,16 @@ export const Thumbnail = styled.section<IThumbnailProps>`
   .sectionPlayer {
     position: absolute;
     width: 100%;
-    height: 100px;
-    bottom: -70%;
+    height: fit-content;
+    bottom: -5px;
     opacity: 1;
-    background-color: rgba(0,0,0,.25);
+    z-index: -1;
+    background-color: rgba(255,165,0, .25);
     backdrop-filter: blur(7.5px);
     transition: .4s ease-in-out;
     border-top: 1px solid rgba(256, 256, 256, .25);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, .5);
 
     div {
@@ -217,15 +226,16 @@ export const Thumbnail = styled.section<IThumbnailProps>`
     .sectionNameMovie {
       width: fit-content;
       pointer-events: none;
-      position: absolute;
-      bottom: 100px;
+      position: relative;
+      bottom: 0px;
       margin-left: 22px;
+      margin-top: 5px;
       opacity: 0;
       transition: .4s ease-in-out;
       transition-delay: 0s;
 
       img {
-        width: 120px;
+        height: 30px;
       }
     }
 
@@ -233,6 +243,7 @@ export const Thumbnail = styled.section<IThumbnailProps>`
       display: flex;
       position: relative;
       width: 100%;
+      height: fit-content;
       flex-direction: row;
       justify-content: space-between;
 
@@ -283,7 +294,7 @@ export const Thumbnail = styled.section<IThumbnailProps>`
     }
 
     .category {
-      margin-top: 5px;
+      margin: 5px 0 10px;
 
       span {
         position: relative;

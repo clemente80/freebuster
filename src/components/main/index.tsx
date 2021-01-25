@@ -8,6 +8,7 @@ import {BiLike} from 'react-icons/bi'
 import {BiDislike} from 'react-icons/bi'
 import ReactPlayer from 'react-player'
 import api from './../../services/api'
+import ModalMovie from './../../components/ModalMovie'
 
 interface ImovieData{
     film_name: string,
@@ -88,11 +89,11 @@ const MainComponent: React.FC = () => {
             <div className='background'>
                 <ReactPlayer
                     className='player'
-                    url= {[ 'https://www.youtube.com/watch?v=B9U8OgTGDSk',
-                            'https://www.youtube.com/watch?v=atHBOUvgBI8',
-                            'https://www.youtube.com/watch?v=i9Wc82gCZLE',
+                    url= {[ 'https://www.youtube.com/watch?v=atHBOUvgBI8',
                             'https://www.youtube.com/watch?v=NcnK3C5W7SI',
-                            'https://www.youtube.com/watch?v=8yyzNQfaQR8'
+                            'https://www.youtube.com/watch?v=i9Wc82gCZLE',
+                            'https://www.youtube.com/watch?v=8yyzNQfaQR8',
+                            'https://www.youtube.com/watch?v=B9U8OgTGDSk'
                     ]}
                     width= '100%'
                     height= '100vh'
@@ -158,6 +159,8 @@ const MainComponent: React.FC = () => {
             
             
             <div  className='arrowThumbnail next'><IoIosArrowForward /></div>
+
+            <ModalMovie />
         </Container>
     )
 }
