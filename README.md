@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/70956778/105874125-01f14e00-5fdb-11eb-940a-061518e0aec7.png)
+![image](https://user-images.githubusercontent.com/70956778/105875179-3f0a1000-5fdc-11eb-8547-dbd2bca88f76.png)
 
 # Before executing you need to make sure to type a line code in the command:
 
