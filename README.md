@@ -1,3 +1,5 @@
+![Image of Freebuster](https://user-images.githubusercontent.com/70956778/105861655-b6847300-5fcd-11eb-9442-966c027077fa.png)
+
 # Before executing you need to make sure to type a line code in the command:
 
 ### `json-server --watch films.json --port 3000`
