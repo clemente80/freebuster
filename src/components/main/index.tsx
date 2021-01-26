@@ -41,7 +41,9 @@ const MainComponent: React.FC = () => {
 
         const posTop = document.getElementById('thumbnail' + a)?.offsetTop
         const posLeft = document.getElementById('thumbnail' + a)?.offsetLeft
-        console.log(' top ' + posTop, ' left '+ posLeft)
+        const comp = document.getElementById('thumbnail' + a)?.clientWidth
+        const alt = document.getElementById('thumbnail' + a)?.clientHeight
+        console.log('top: '+posTop, ' left: '+posLeft, 'width: '+comp, 'height: '+alt)
     }, [])
 
     useEffect(() => {
