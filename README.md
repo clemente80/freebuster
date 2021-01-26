@@ -1,4 +1,4 @@
-![Image of Freebuster](https://user-images.githubusercontent.com/70956778/105861655-b6847300-5fcd-11eb-9442-966c027077fa.png)
+![image](https://user-images.githubusercontent.com/70956778/105863566-c604bb80-5fcf-11eb-969d-ef3ac30592f7.png)
 
 # Before executing you need to make sure to type a line code in the command:
 
