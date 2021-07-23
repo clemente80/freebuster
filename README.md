@@ -1,3 +1,4 @@
+![freebuster](https://user-images.githubusercontent.com/70956778/126792154-cd7438f2-c99b-4c3a-ac7a-03c6a7d4046b.gif)
 ![freebuster ‐ Made with Clipchamp](https://user-images.githubusercontent.com/70956778/124947260-0ee08780-dfe6-11eb-96a7-ef212b6189d7.gif)
 
 # Before executing you need to make sure to type a line code in the command:
